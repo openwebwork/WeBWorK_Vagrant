@@ -6,7 +6,7 @@ vagrant files for WeBWorK development
 To set up with a prebuilt box:
 
 ```
-git clone https://github.com/whytheplatypus/WeBWorK_Vagrant.git
+git clone https://github.com/openwebwork/WeBWorK_Vagrant.git
 cd WeBWorK_Vagrant
 git checkout -b packaged origin/packaged
 git clone https://github.com/<your-git-username>/webwork2.git
@@ -18,7 +18,7 @@ vagrant up
 To set up a quick dev environment for WeBWorK:
 
 ```
-git clone https://github.com/whytheplatypus/WeBWorK_Vagrant.git
+git clone https://github.com/openwebwork/WeBWorK_Vagrant.git
 cd WeBWorK_Vagrant
 git clone https://github.com/<your-git-username>/webwork2.git
 git clone https://github.com/<your-git-username>/pg.git
