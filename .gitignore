@@ -1,1 +1,6 @@
+.DS_Store
 .vagrant
+*~
+*.save
+webwork2
+pg
