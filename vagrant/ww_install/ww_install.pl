@@ -42,7 +42,7 @@
 
 use strict;
 use warnings;
-use lib 'lib';
+use lib '/vagrant/vagrant/ww_install/lib';
 
 use Config;
 
@@ -63,11 +63,11 @@ use DBI;
 
 use Term::UI;
 use Term::ReadLine;
-use Term::ReadPassword #to be found in lib/
+use Term::ReadPassword; #to be found in lib/
 
 
-#use Term::ReadKey;
-#use Data::Dumper;
+# use Term::ReadKey;
+# use Data::Dumper;
 
 ###############################################################################################
 # Create a new Term::Readline object for interactivity
