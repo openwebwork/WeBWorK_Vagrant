@@ -10,8 +10,8 @@ Vagrant::Config.run do |config|
         ww_config.vm.forward_port 3306, 8889
         ww_config.vm.forward_port 5432, 5433
         ww_config.vm.host_name = "WeBWorK"
-        ww_config.vm.share_folder("webwork2", "/opt/webwork/webwork2", "./webwork2",  :extra => 'dmode=777,fmode=777')
-        ww_config.vm.share_folder("pg", "/opt/webwork/pg", "./pg",  :extra => 'dmode=777,fmode=777')
+        ww_config.vm.share_folder("webwork2", "/opt/webwork/webwork2", "./webwork2",  mount_options: ['dmode=777','fmode=777'])
+        ww_config.vm.share_folder("pg", "/opt/webwork/pg", "./pg",  mount_options:['dmode=777','fmode=777'])
         #ww_config.vm.provision :shell, :inline => "echo \"America/Denver\" | sudo tee /etc/timezone && dpkg-reconfigure --frontend noninteractive tzdata"
     end
 end
